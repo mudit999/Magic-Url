@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url shortener - Magic Url</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div>
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <p class="header-app-name">Magic URL ✨</p>
+            </div>
+
+            <div>
+                <a href="https://github.com/mudit999" target="_blank">
+                    <img src="/images/Github.png" alt="Github Icon" class="githubIcon">
+                </a>
+            </div>
+        </div>
+
+        <!-- Body -->
+
+        <div>
+            <div class="app-headline-text">A simple link <br> but a powerful tool for anyone</div>
+
+            <!-- Form to create short URL -->
+            <form action="/sendLongUrl" method="POST" class="long-url-form">
+                <input type="url" class="long-url-input" name="longUrl" placeholder="https://www.typelongurl.com/getshorturl" required>
+                <button class= "long-url-button" type="submit">Create</button>
+            </form>
+
+            <!-- table -->
+            <div class="scrollable">
+                <div class="table">
+                    <div class="table-head">Long Url</div>
+                    <div class="table-head">Short Url</div>
+
+                    <% urlData.forEach(item => { %>
+                        <div class="table-body">
+                            <a href="<%= item.longUrl %>" target="_blank" width="900px"><%= item.longUrl %></a>
+                        </div>
+                        <div class="table-body shortUrl" >
+                            <a href="<%= item.shortUrl %>" target="_blank" width="200px"><%= item.shortUrl %></a>
+                        </div>
+                    <% }) %>
+
+                </div>
+            </div>
+
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer">
+            Built with love ❤️
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Magic Url",
+  "version": "1.0.0",
+  "description": "Url shortener app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mudit Garg",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5",
+    "shortid": "^2.2.16"
+  }
+}
