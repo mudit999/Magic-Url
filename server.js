@@ -14,7 +14,6 @@ app.use(express.static('public'));
 app.use('public/images', express.static('public/images'));
 app.use(express.static('public/styles'));
 
-
 // for accessing url params
 app.use(express.urlencoded({ extended: false }));
 
