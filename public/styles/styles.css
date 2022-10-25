@@ -37,7 +37,8 @@ body{
 .app-headline-text{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 4.2vw;
 }
 
 /* Form */
