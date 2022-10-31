@@ -21,3 +21,6 @@
 
 ## Upcoming Features
 - Customized URL for better SEO Optimization
+
+## Quick Look
+![Magic URL screenshot](https://github.com/mudit999/Portfolio/blob/master/images/magic-url-demo.png)
