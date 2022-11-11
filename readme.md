@@ -23,4 +23,4 @@
 - Customized URL for better SEO Optimization
 
 ## Quick Look
-![Magic URL screenshot](https://github.com/mudit999/Portfolio/blob/master/images/magic-url-demo.png)
+![Magic URL screenshot](https://github.com/mudit999/Magic-Url/blob/main/demo/images/magic-url-demo.png)
