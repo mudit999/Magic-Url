@@ -3,14 +3,16 @@ const app = express();
 require('dotenv').config();
 const connectDb = require('./config/db');
 const Url = require('./model/urlModel');
+const path = require('path')
 
 // connecting to database server
 connectDb();
 
-// template engine
-app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(express.static('public'));
+// template engine
+app.set("views", __dirname + "/views");
+app.set('view engine', 'ejs');
 
 // for accessing url params
 app.use(express.urlencoded({ extended: false }));
